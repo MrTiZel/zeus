@@ -1,0 +1,51 @@
+@font-face{
+    font-family: 'Cinzel Decorative', arial;
+    src: url("../fonts/cinzel-decorative.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Cinzel Decorative Black', arial;
+    src: url("../fonts/cinzel-decorative-black.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Cinzel Decorative Bold', arial;
+    src: url("../fonts/cinzel-decorative_bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Amiri Regular', arial;
+    src: url("../fonts/amiri-regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Amiri Slanted', arial;
+    src: url("../fonts/amiri-slanted.ttf") format("ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+$ff-h: 'Cinzel Decorative', arial;
+$ff-h-black: 'Cinzel Decorative Black', arial;
+$ff-h-bold: 'Cinzel Decorative Bold';
+$ff-text-regular: 'Amiri Regular', arial;
+$ff-text-slanted: 'Amiri Slanted', arial;
+
+//size text for header
+$size-header-h1-text: 2.25rem;
+$size-header-span60-text: 3.75rem;
+$size-header-span24-text: 1.5rem;
+
+//size text for main content
+$size-h72-text: 4.5rem;
+$size-h60-text: 3.75rem;
+$size-p24-text: 1.5rem;
+
+//size text for botton
+$size-p24-text: 1rem;

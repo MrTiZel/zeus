@@ -1,0 +1,50 @@
+@mixin positionCenter(){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin positionY(){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin positionX(){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin MW1200lg{
+    @media media only screen and (min-width: 75em)  {
+		.container {
+			width: 76rem;
+		}
+        @content;
+    }
+}
+@mixin MW1024md{
+    @media only screen and (min-width: 64em) {
+        .container {
+			width: 65rem;
+		}
+        @content;
+    }
+}
+@mixin MW768sm{
+    @media only screen and (min-width: 48em) {
+        .container {
+			width: 49rem;
+		}
+        @content;
+    }
+}
+
+@mixin MW580{
+    @media only screen and (min-width: 36em) {
+        .container {
+			width: 37rem;
+		}
+        @content;
+    }
+}

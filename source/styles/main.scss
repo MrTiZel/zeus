@@ -1,0 +1,48 @@
+//FlexBox Grid - http://flexboxgrid.com/
+@import "../../node_modules/flexboxgrid/dist/flexboxgrid.min.css";
+//Подключение библиотеки с иконками - https://fontawesome.com/v4.7.0/
+@import "../../node_modules/font-awesome/scss/font-awesome";
+//Подключение дополнительной библиотеки
+@import "../../node_modules/normalize.scss/normalize";
+
+
+//Подключение своих шрифтов
+@import "global/fonts";
+//Палитра цветов проекта
+@import "global/colors";
+//Миксины проекта
+@import "global/mixins";
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+*
+*::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: $ff-main;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+@import "moduls/header";
+@import "moduls/footer";
