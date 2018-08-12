@@ -1,19 +1,19 @@
-include global/params
-include global/mixins
-
 doctype html
-html(lang='ru')
+html(lang='en')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content="IE=edge")
     meta(name='viewport' content='width=device-width')
     link(rel="stylesheet" href="css/main.min.css")
-    link(rel="stylesheet" href="css/bootstrap.min.css")
-    title Business
+    title Zeus
   body
       
     include moduls/header
+    include moduls/brewing
+    include moduls/original
+    include moduls/drinkman
+    include moduls/handcrafted
     include moduls/footer
     
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
-    script(src="js/bootstrap.min.js")
+    script(src="js/main.min.js")
