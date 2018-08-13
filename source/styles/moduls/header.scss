@@ -1,0 +1,77 @@
+.header{
+    position: relative;
+    background: url('../images/header_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1060px;
+
+
+    &__block-text{
+        max-width: 710px;
+        margin: 0 auto;
+        margin-top: 135px;
+        text-align: center;
+        color: $color_text_wihte;
+
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        font-family: $ff-h-black;
+        font-size: $size-header-span60-text;
+        margin-bottom: -10px;
+
+        &::before{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: $color_text_gold;
+            margin-right: 20px;
+        }
+
+        &::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: $color_text_gold;
+            margin-left: 20px;
+        }
+    }
+    &__heading{
+        font-family: $ff-h;
+        font-size: $size-header-h1-text;
+        font-weight: normal;
+    }
+    &__name{
+        font-family: $ff-text-slanted;
+        font-size: $size-header-span24-text;
+        color: $color_text_gold;
+    }
+    &__button{
+        @include positionX;
+        bottom: 100px;
+        display: block;
+        margin: 0 auto;
+        background: none;
+        color: $color_text_gold;
+        font-family: $ff-text-regular;
+        font-weight: lighter;
+        border: none;
+
+        i{
+            display: block;
+        }
+    }
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+
+    &__img{
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -1,3 +1,22 @@
-include global/mixins
+//- Ссылка на файл логотипа сайта
+- var logoImg = "images/Logo.png";
+//- Название сайта
+- var title = "Beer";
+//- Главный заголовок сайта
+- var heading = "Now there's a temporary solution.";
+//- Имя автора
+- var name = "Dan Castellaneta";
+//- Текст кнопки
+- var buttonText = "Schroll to view more";
 
-header
+header.header
+    .container
+        .logo
+            img.logo__img( src=logoImg alt="logo")
+        .header__block-text
+            span.header__title #{title}
+            h1.header__heading #{heading}
+            span.header__name #{name}
+            button.header__button 
+                | #{buttonText}
+                i(class="fa fa-chevron-down" aria-hidden="true")
