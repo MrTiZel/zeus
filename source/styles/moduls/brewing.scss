@@ -1,0 +1,28 @@
+.brewing{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    position: relative;
+    top: -35px;
+    &__img{
+        img{
+            max-width: 100%;
+            height: auto;
+            z-index: 10;
+        }
+    }
+    &__block-text{
+        margin: 110px 200px 110px 20px;
+    }
+    &__heading{
+        font-family: $ff-h;
+        font-size: $size-h60-text;
+        color: $color_text_wihte;
+        font-weight: normal;
+    }
+    &__text{
+        color: $color_text_gold;
+        font-family: $ff-text-regular;
+        font-size: $size-p24-text;
+    }
+}

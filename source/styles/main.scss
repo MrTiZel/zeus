@@ -27,6 +27,7 @@ html{
 body{
     font-size: 1rem;
     line-height: 1.2;
+    background-color: $color-bg-green-dark;
 }
 
 ul,
@@ -40,6 +41,19 @@ ol{
     padding-left: 15px;
     padding-right: 15px;
 }
+.botton{
+    &__check-more{
+        background: $color_botton_green_dark;
+        border: $color_botton_green_ligth 1px solid;
+        padding: 10px 50px;
+        text-transform: uppercase;
+        color: $color_text_wihte;
+        font-family: $ff-text-regular;
+        font-size: 1rem;
+    }
+}
 
 @import "moduls/header";
+@import "moduls/brewing";
+@import "moduls/original";
 @import "moduls/footer";

@@ -1,0 +1,45 @@
+.original{
+    position: relative;
+    top: -280px;
+    z-index: 20;
+    max-width: 1620px;
+    height: 490px;
+    background: $color-bg-green-light url('../images/Logo_bg.png') no-repeat right top;
+    box-shadow: 0px 0px 100px -10px rgba(0,0,0,0.5);
+    .container{
+        height: 490px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__img{
+        position: relative;
+        top: -50px;
+        left: 40px;
+        img{
+            max-width: 100%;
+            height: auto;
+            z-index: 20;
+
+        }
+    }
+    &__block-text{
+        max-width: 955px;
+        margin: 50px;
+    }
+    &__heading{
+        color: $color_text_gold;
+        font-family: $ff-h;
+        font-size: $size-h60-text;
+        font-weight: normal;
+    }
+    &__text{
+        color: $color_text_green_light;
+        font-family: $ff-text-regular;
+        font-size: $size-p24-text;
+        margin: 30px 0;
+        max-width: 600px;
+        line-height: 2.5;
+    }
+}
